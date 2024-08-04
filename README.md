@@ -1,7 +1,8 @@
 # Rust Playground Textbook
-### [Chapter 1](https://github.com/fisherrjd/rust_playground/tree/main/Chapter_1)
-
-### [Chapter 2](https://github.com/fisherrjd/rust_playground/tree/main/Chapter_2)
+### Chapter 1
+#### [Getting Started](https://github.com/fisherrjd/rust_playground/tree/main/Chapter_1)
+### Chapter 2
+#### [Guessing Game]((https://github.com/fisherrjd/rust_playground/tree/main/Chapter_2))
 ### Chapter 3
 ### Chapter 4
 ### Chapter 5
