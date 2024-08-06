@@ -64,6 +64,15 @@ impl fmt::Display for Task {
             self.list.push(task);
         }
 
+        pub fn complete_task(&mut self, task_id: u32) -> Result<(), String>{
+            if let Some(task) = self.iter.iter_mut().find(|t| t.id == task_id){
+                task.status = Status::Complete;
+                OK(())
+            } else{
+                Err(format!("Task with ID {} not found", task_id))
+            }
+        }
+
         
     }
     impl fmt::Display for TaskList {
