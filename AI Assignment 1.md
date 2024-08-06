@@ -6,12 +6,12 @@ Develop a command-line TODO application using Rust. This project will reinforce 
 ## Requirements
 
 ### 1. Task Management
-- [ ] Implement a `Task` struct with fields for id, description, and completion status
-- [ ] Create functions to:
-  - Add new tasks
-  - List all tasks
-  - Mark tasks as complete
-  - Remove tasks
+- [x] Implement a `Task` struct with fields for id, description, and completion status
+- Create functions to:
+  - [ ] Add new tasks
+  - [ ] List all tasks
+  - [ ] Tasks as complete
+  - [ ] Remove tasks
 
 ### 2. Data Persistence
 - [ ] Save tasks to a JSON file

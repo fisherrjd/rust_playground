@@ -73,7 +73,14 @@ impl fmt::Display for Task {
             }
         }
 
-        
+        pub fn remove_task(&mut self, task_id: u32) -> Option<Task> {
+            if let Some(index) = self.list.iter().position(|task| task.id == task_id) {
+                Some(self.list.remove(index))
+            } else {
+                None
+            }
+        }
+   
     }
     impl fmt::Display for TaskList {
         fn fmt(&self, f: &mut fmt::Formatter<'_>) -> fmt::Result {
