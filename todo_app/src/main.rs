@@ -1,7 +1,6 @@
-mod task, task_list;
+mod task;
 
 use task::{Task, Status};
-use task_list::{Task_list};
 
 fn main() {
     let _task1 = Task{
@@ -20,5 +19,7 @@ fn main() {
         status: Status::Complete
     };   
 
-    let mut tasks: Vec<Task> = Vec::new();
+    println!("{}", _task1);
+    println!("{}", _task2);
+    println!("{}", _task3);
 }
