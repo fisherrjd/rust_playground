@@ -1,25 +1,28 @@
 mod task;
 
-use task::{Task, Status};
+use task::{Task, Status, TaskList};
 
 fn main() {
-    let _task1 = Task{
+
+    let mut main = TaskList::new(1, String::from("TODO"));
+    let task1 = Task{
         id:1,
         desc: String::from("implement login functionality"),
         status: Status::Open
     };
-    let _task2 = Task{
+    let task2 = Task{
         id:2,
         desc: String::from("Build home page"),
         status: Status::Inprogress
     };   
-    let _task3 = Task{
+    let task3 = Task{
         id:3,
         desc: String::from("Create user profile page"),
         status: Status::Complete
     };   
 
-    println!("{}", _task1);
-    println!("{}", _task2);
-    println!("{}", _task3);
+    main.add_task(task1);
+    main.add_task(task2);
+    main.add_task(task3);
+    println!("{}", main);
 }

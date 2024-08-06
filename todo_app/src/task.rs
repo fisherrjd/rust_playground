@@ -63,4 +63,16 @@ impl fmt::Display for Task {
         pub fn add_task(&mut self, task: Task) {
             self.list.push(task);
         }
+
+        
     }
+    impl fmt::Display for TaskList {
+        fn fmt(&self, f: &mut fmt::Formatter<'_>) -> fmt::Result {
+            writeln!(f, "Task List: {} (ID: {})", self.title, self.id)?;
+            for task in &self.list {
+                writeln!(f, "  {}", task)?;
+            }
+            Ok(())
+        }
+    }
+    
